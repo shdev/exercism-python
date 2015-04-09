@@ -10,5 +10,4 @@ class Allergies(object):
                      if self.score & 2 ** idx == 2 ** idx]
 
     def is_allergic_to(self, item):
-        idx = self._allergie_items.index(item)
-        return self.score & 2 ** idx == 2 ** idx
+        return item in self.list
