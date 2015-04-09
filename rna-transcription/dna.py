@@ -9,7 +9,7 @@ mapping = {
 def to_rna(dna):
     return_string = ''
 
-    for i in xrange(0, len(dna)):
-        return_string += mapping[dna[i]]
+    for acid in dna:
+        return_string += mapping[acid]
 
     return return_string
