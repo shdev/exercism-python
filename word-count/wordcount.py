@@ -2,4 +2,4 @@ from collections import Counter
 
 
 def word_count(sentence):
-    return dict(Counter(sentence.split()))
+    return Counter(sentence.split())
