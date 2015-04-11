@@ -7,7 +7,7 @@ class Allergies(object):
         self.score = score
         self.list = [self._allergie_items[idx]
                      for idx in xrange(0, len(self._allergie_items))
-                     if self.score & 2 ** idx == 2 ** idx]
+                     if self.score & 1 << idx]
 
     def is_allergic_to(self, item):
         return item in self.list
